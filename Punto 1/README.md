@@ -1,12 +1,12 @@
 # Reporte: Implementación de Perceptrón usando el Paradigma de Agentes con MESA
 
-## 1. Introducción
+## Introducción
 
 Este documento describe la implementación de un perceptrón simple utilizando el paradigma de agentes mediante la librería MESA en Python. El perceptrón es un modelo fundamental de red neuronal que puede clasificar datos linealmente separables.
 
-## 2. Diseño de la Solución
+## Diseño de la Solución
 
-### 2.1. Arquitectura del Sistema
+### Arquitectura del Sistema
 
 El sistema está compuesto por tres tipos principales de agentes:
 
@@ -14,7 +14,7 @@ El sistema está compuesto por tres tipos principales de agentes:
 - **DataPoint**: Representa cada punto de datos en el espacio 2D.  
 - **PerceptronModel**: Coordina la simulación y gestiona los agentes.
 
-### 2.2. Modelo Matemático
+### Modelo Matemático
 
 El perceptrón implementa la siguiente función:
 
@@ -27,7 +27,7 @@ Donde:
 - `b`: Término de bias.  
 - `sign()`: Función de activación (devuelve 1 o -1).
 
-### 2.3. Algoritmo de Aprendizaje
+### Algoritmo de Aprendizaje
 
 ```python
 # Pseudocódigo
@@ -41,7 +41,7 @@ Para cada iteración:
      b  = b  + α * e
 ```
 
-## 3Implementación
+## Implementación
 
 ### Estructura de Archivos
 
@@ -192,4 +192,5 @@ print(f'Precisión después de 10 iteraciones: {model.accuracy:.1%}')
 PY
 
 ```
+
 
