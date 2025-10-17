@@ -1,6 +1,4 @@
-# Calculadora científica (pruebas en Kotlin Playground)
-
-**título:** **implementación de una calculadora científica usando POO en Kotlin**
+# Calculadora científica utilizanzo POO en Kotlin (pruebas en Kotlin Playground)
 
 ## Descripción
 Es un archivo Kotlin pensado para ejecutar en **Kotlin Playground**. Implementa:
@@ -61,4 +59,5 @@ La clase `Memoria` ofrece:
 - `mRecall()` devuelve el valor almacenado.
 - `mClear()` limpia la memoria.
 ---
+
 
