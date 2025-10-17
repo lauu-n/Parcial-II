@@ -5,7 +5,7 @@ Calculadora distribuida donde cada operación aritmética es un agente (suma, re
 
 ## Requisitos
 - Python 3.10–3.12  
-- mesa==2.1.1 (o la versión que ya tengas; 2.1.1 funciona correctamente)
+- mesa==2.1.1
 
 Instalación de dependencias:
 ```bash
@@ -53,3 +53,4 @@ El objetivo principal es simular el procesamiento concurrente y cooperativo de u
 ("2 + 3 * 4 - 5 ^ 2 / 5")
 ```
 - Resultado esperado: `9`
+
