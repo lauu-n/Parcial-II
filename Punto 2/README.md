@@ -14,9 +14,6 @@ pip install mesa==2.1.1
 
 ## Archivos principales
 - `agent_calc_mesa.py` — implementación principal de la calculadora con agentes.  
-- `diseño_mba.md` — documento con el diseño del sistema.  
-- `informe.docx` — informe para entrega (formato Word).  
-- `trazas/` — carpeta con trazas/ejemplos de ejecución.
 
 ## Cómo ejecutar
 1. Activa tu entorno virtual (si corresponde).
@@ -30,18 +27,12 @@ Resultado final: 9
 ```
 
 ## Ejemplo rápido / Pruebas
-- Abre `agent_calc_mesa.py` y, en el bloque:
-```python
-if __name__ == '__main__':
-    io.set_expression("2 + 3 * 4 - 5 ^ 2 / 5")
+- Ejecuta `agent_calc_mesa.py` y, escribe, por ejemplo:
 ```
-- Ejecuta el script:
-```bash
-python agent_calc_mesa.py
+("2 + 3 * 4 - 5 ^ 2 / 5")
 ```
 - Resultado esperado: `9`
 
-Puedes modificar la expresión para probar enteros y decimales. La notación infija es convertida internamente a postfix (shunting-yard) por el agente IO.
 
 ## Notas sobre funcionamiento
 - El agente IO convierte la expresión infija a postfix (algoritmo shunting-yard) y envía solicitudes `compute` a los agentes de operación.
@@ -51,15 +42,7 @@ Puedes modificar la expresión para probar enteros y decimales. La notación inf
 
 ## Sugerencias de pruebas adicionales
 - Probar expresiones con paréntesis, distintos precedencias y con números decimales:
-  - `io.set_expression("3 + (4 - 2) * 5")`
-  - `io.set_expression("2.5 * 4 - 1.25 / 0.5")`
+  - `("3 + (4 - 2) * 5")`
+  - `("2.5 * 4 - 1.25 / 0.5")`
 - Probar división por cero para ver manejo de errores en el agente división.
-- Añadir trazas/logging en `trazas/` para analizar mensajes entre agentes.
-
-## Posibles mejoras
-- Soportar variables y asignaciones (ej.: `a = 3; a * 4`).
-- Añadir concurrencia real (mensajería asíncrona entre agentes).
-- Interfaz simple (CLI interactiva) para introducir expresiones en tiempo real.
-- Añadir tests unitarios automáticos (pytest) para las operaciones y la conversión infija→postfix.
-
 ---
