@@ -41,16 +41,15 @@ Para cada iteración:
      b  = b  + α * e
 ```
 
-## 3. Implementación
+## 3Implementación
 
-### 3.1. Estructura de Archivos
+### Estructura de Archivos
 
 ```
 perceptron_mesa.py  # Código principal
-requirements.txt    # Dependencias
 ```
 
-### 3.2. Clases Principales
+### Clases Principales
 
 #### PerceptronAgent
 - **Propósito**: Implementar el algoritmo de aprendizaje  
@@ -66,9 +65,9 @@ requirements.txt    # Dependencias
 - **Propósito**: Gestionar la simulación completa  
 - **Funcionalidades**: Generación de datos, entrenamiento, evaluación
 
-## 4. Pruebas y Documentación
+## Pruebas y Documentación
 
-### 4.1. Cómo Probar el Sistema
+### Cómo Probar el Sistema
 
 **Paso 1: Instalación de dependencias**
 ```bash
@@ -82,8 +81,11 @@ python perceptron_mesa.py
 
 **Paso 3: Acceder a la interfaz**
 - Abrir navegador en: `http://127.0.0.1:8521/`
+- Debería aparecer:
+  <img width="1215" height="582" alt="Captura de pantalla 2025-10-17 015541" src="https://github.com/user-attachments/assets/8213f96b-b120-462d-8b04-e9250f0875c4" />
 
-### 4.2. Casos de Prueba Documentados
+
+### Casos de Prueba Documentados
 
 #### Prueba 1: Configuración Básica
 ```
@@ -116,7 +118,7 @@ Observación:
 - Convergencia más lenta pero estable
 ```
 
-### 4.3. Capturas de Prueba
+### Capturas de Prueba
 
 **Configuración inicial:**
 - Puntos grises: Sin clasificar  
@@ -216,4 +218,5 @@ for i in range(10):
     model.step()
 print(f'Precisión después de 10 iteraciones: {model.accuracy:.1%}')
 PY
+
 ```
