@@ -23,7 +23,7 @@ Es un archivo Kotlin pensado para ejecutar en **Kotlin Playground**. Implementa:
 4. En la consola verás las pruebas básicas y funciones científicas.
 Así:
   <img width="284" height="115" alt="image" src="https://github.com/user-attachments/assets/8056fef9-aae8-4e8e-89fa-2fe827f2b41a" />
-  <img width="284" height="145" alt="image" src="https://github.com/user-attachments/assets/196fcc03-950e-45de-bab9-abd5773d2d2a" />
+  <img width="284" height="185" alt="image" src="https://github.com/user-attachments/assets/196fcc03-950e-45de-bab9-abd5773d2d2a" />
 
 ## Aplicación de principios de POO
 
@@ -62,6 +62,7 @@ La clase `Memoria` ofrece:
 - `mRecall()` devuelve el valor almacenado.
 - `mClear()` limpia la memoria.
 ---
+
 
 
 
