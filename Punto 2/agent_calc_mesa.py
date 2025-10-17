@@ -209,6 +209,7 @@ def build_calculator():
     return m, io
 
 if __name__ == '__main__':
+    print ("Calculadora basada en agentes")
     model, io = build_calculator()
     try:
         while True:
