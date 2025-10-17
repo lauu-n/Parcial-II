@@ -31,6 +31,7 @@ Resultado final: 9
   - `("3 + (4 - 2) * 5")`
   - `("2.5 * 4 - 1.25 / 0.5")`
 - Probar división por cero para ver manejo de errores en el agente división.
+
 ---
 
 # INFORME
@@ -53,4 +54,5 @@ El objetivo principal es simular el procesamiento concurrente y cooperativo de u
 ("2 + 3 * 4 - 5 ^ 2 / 5")
 ```
 - Resultado esperado: `9`
+
 
