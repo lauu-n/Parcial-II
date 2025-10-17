@@ -172,51 +172,24 @@ En pruebas realizadas con diferentes configuraciones:
    - Calcular precisión en tiempo real.  
    - Mostrar métricas en gráficos.
 
-### 6.2. Paradigma de Agentes
+### Paradigma de Agentes
 
 Cada componente es un agente independiente:
 - **PerceptronAgent**: Toma decisiones de aprendizaje  
 - **DataPoint**: Mantiene su estado de clasificación  
 - **Interacción**: Los puntos consultan al perceptrón para su clasificación
 
-## 7. Conclusiones
+## Conclusiones
 
-### 7.1. Logros Implementados
-
-- ✅ **Interfaz gráfica completa** con controles interactivos  
-- ✅ **Algoritmo de perceptrón** funcional y eficiente  
-- ✅ **Visualización en tiempo real** del aprendizaje  
-- ✅ **Paradigma de agentes** correctamente aplicado  
-- ✅ **Métricas de evaluación** en tiempo real
-
-### 7.2. Aprendizajes
-
-- El paradigma de agentes es efectivo para modelar sistemas de aprendizaje automático.  
-- MESA proporciona un framework robusto para simulaciones interactivas.  
-- La visualización ayuda a comprender el proceso de aprendizaje.
-
-### 7.3. Posibles Mejoras
-
-- Implementar múltiples perceptrones en competencia.  
-- Agregar diferentes funciones de activación.  
-- Incluir datasets no linealmente separables.  
-- Implementar validación cruzada.
-
+- **Interfaz gráfica completa** con controles interactivos  
+- **Algoritmo de perceptrón** funcional y eficiente  
+- **Visualización en tiempo real** del aprendizaje  
+- **Paradigma de agentes** correctamente aplicado  
+- **Métricas de evaluación** en tiempo real
 ---
-
-## Apéndice: Comandos de Verificación
-
-```bash
-# Verificar instalación
-python -c "import mesa; print(f'MESA version: {mesa.__version__}')"
-
-# Ejecutar pruebas automatizadas
-python - <<'PY'
-import perceptron_mesa as pm
-model = pm.PerceptronModel(num_points=10, learning_rate=0.1, max_iterations=10)
-for i in range(10):
     model.step()
 print(f'Precisión después de 10 iteraciones: {model.accuracy:.1%}')
 PY
 
 ```
+
