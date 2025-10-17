@@ -1,4 +1,4 @@
-# Calculadora científica utilizanzo POO en Kotlin (pruebas en Kotlin Playground)
+# INFORME: Calculadora científica utilizanzo POO en Kotlin (pruebas en Kotlin Playground)
 
 ## Descripción
 Es un archivo Kotlin pensado para ejecutar en **Kotlin Playground**. Implementa:
@@ -9,12 +9,6 @@ Es un archivo Kotlin pensado para ejecutar en **Kotlin Playground**. Implementa:
 - Memoria (M+, M-, MR, MC).
 - Manejo de excepciones para entradas inválidas y división por cero.
 
-## Cómo usar
-1. Abrir https://play.kotlinlang.org/
-2. Pegar todo el código Kotlin proporcionado en un solo archivo.
-3. Pulsar **Run**.
-4. En la consola verás las pruebas básicas, funciones científicas, evaluación de expresiones, uso de memoria y manejo de errores.
-
 ## Ejemplos de expresiones que se pueden evaluar
 - `2+3*4`
 - `2 + 3 * sin(30)`
@@ -22,7 +16,16 @@ Es un archivo Kotlin pensado para ejecutar en **Kotlin Playground**. Implementa:
 - `3 + 4 * 2 / (1 - 5) ^ 2`
 - `sqrt(16) + 2`
 
-## Informe: aplicación de principios de POO
+## Cómo usar
+1. Abrir https://play.kotlinlang.org/
+2. Pegar todo el código Kotlin proporcionado en un solo archivo.
+3. Pulsar **Run**.
+4. En la consola verás las pruebas básicas y funciones científicas.
+Así:
+  <img width="284" height="115" alt="image" src="https://github.com/user-attachments/assets/8056fef9-aae8-4e8e-89fa-2fe827f2b41a" />
+  <img width="284" height="115" alt="image" src="https://github.com/user-attachments/assets/196fcc03-950e-45de-bab9-abd5773d2d2a" />
+
+## Aplicación de principios de POO
 
 ### Encapsulamiento
 La calculadora está organizada en clases con responsabilidades claras:
@@ -59,5 +62,6 @@ La clase `Memoria` ofrece:
 - `mRecall()` devuelve el valor almacenado.
 - `mClear()` limpia la memoria.
 ---
+
 
 
