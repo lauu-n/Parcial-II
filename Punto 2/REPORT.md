@@ -1,4 +1,4 @@
-# Calculadora Basada en Agentes (MESA)
+# INFORME: Calculadora Basada en Agentes (MESA)
 
 ## Descripción
 Calculadora distribuida donde cada operación aritmética es un agente (suma, resta, multiplicación, división, potencia) y existe un agente IO que orquesta la evaluación de expresiones mediante notación postfija (RPN - Reverse Polish Notation).
@@ -34,8 +34,6 @@ Resultado final: 9
 
 ---
 
-# INFORME
-
 ## Objetivo
 Desarrollar una calculadora distribuida basada en agentes utilizando el framework MESA, en la que cada agente representa una operación aritmética (suma, resta, multiplicación, división y potencia), mientras que un agente de entrada/salida (IO) coordina el flujo de mensajes y la resolución de expresiones.
 El objetivo principal es simular el procesamiento concurrente y cooperativo de una expresión matemática mediante comunicación entre agentes.
@@ -54,5 +52,3 @@ El objetivo principal es simular el procesamiento concurrente y cooperativo de u
 ("2 + 3 * 4 - 5 ^ 2 / 5")
 ```
 - Resultado esperado: `9`
-
-
