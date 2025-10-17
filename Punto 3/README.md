@@ -5,8 +5,6 @@ Es un archivo Kotlin pensado para ejecutar en **Kotlin Playground**. Implementa:
 
 - Operaciones básicas (suma, resta, multiplicación, división).
 - Funciones científicas (seno, coseno, tangente en grados; potencias; raíces; logaritmos base 10 y natural; exponencial).
-- Evaluador de expresiones completas (algoritmo shunting-yard → RPN).
-- Memoria (M+, M-, MR, MC).
 - Manejo de excepciones para entradas inválidas y división por cero.
 
 ## Ejemplos de expresiones que se pueden evaluar
@@ -54,16 +52,3 @@ Se implementó el algoritmo shunting-yard para convertir una expresión infija a
 - Funciones: `sin`, `cos`, `tan`, `log` (base 10), `ln`, `exp`, `sqrt`
 - Paréntesis y comas (para futuras extensiones con funciones de varios parámetros).
 Las funciones trigonométricas esperan grados (por conveniencia del usuario), y internamente se convierten a radianes antes de aplicar `sin`, `cos`, `tan`.
-
-### Funcionalidades de memoria
-La clase `Memoria` ofrece:
-- `mPlus(valor)` suma al contenido de memoria.
-- `mMinus(valor)` resta del contenido de memoria.
-- `mRecall()` devuelve el valor almacenado.
-- `mClear()` limpia la memoria.
----
-
-
-
-
-
