@@ -26,23 +26,30 @@ python agent_calc_mesa.py
 Resultado final: 9
 ```
 
-## Ejemplo rápido / Pruebas
-- Ejecuta `agent_calc_mesa.py` y, escribe, por ejemplo:
-```
-("2 + 3 * 4 - 5 ^ 2 / 5")
-```
-- Resultado esperado: `9`
-
-
-## Notas sobre funcionamiento
-- El agente IO convierte la expresión infija a postfix (algoritmo shunting-yard) y envía solicitudes `compute` a los agentes de operación.
-- Cada agente de operación recibe operandos y devuelve el resultado de su operación.
-- El flujo es: IO monta la cola de operaciones en postfix → envía tareas a agentes → recibe resultados parciales → continúa hasta obtener resultado final.
-- El sistema está pensado para ser extensible: puedes añadir agentes para funciones trigonométricas, logaritmos, etc.
-
 ## Sugerencias de pruebas adicionales
 - Probar expresiones con paréntesis, distintos precedencias y con números decimales:
   - `("3 + (4 - 2) * 5")`
   - `("2.5 * 4 - 1.25 / 0.5")`
 - Probar división por cero para ver manejo de errores en el agente división.
 ---
+
+# INFORME
+
+## Objetivo
+Desarrollar una calculadora distribuida basada en agentes utilizando el framework MESA, en la que cada agente representa una operación aritmética (suma, resta, multiplicación, división y potencia), mientras que un agente de entrada/salida (IO) coordina el flujo de mensajes y la resolución de expresiones.
+El objetivo principal es simular el procesamiento concurrente y cooperativo de una expresión matemática mediante comunicación entre agentes.
+
+## Metodología de funcionamiento
+- El usuario escribe una expresión aritmética (por ejemplo, 2 + 3 * 4 - 5 ^ 2 / 5).
+- El agente IO convierte la expresión infija a notación postfija (RPN) mediante el algoritmo shunting-yard.
+- IO recorre la lista postfix y, cuando encuentra un operador, envía un mensaje compute al agente correspondiente (por ejemplo, mul o div) con los operandos.
+- El agente de operación calcula el resultado y envía un mensaje result de vuelta al IO.
+- IO reemplaza los operandos por el resultado y continúa el proceso hasta dejar un solo valor en la pila.
+- El valor final se muestra en pantalla y se registra en el archivo trazas/result.txt.
+
+## Ejemplo rápido / Pruebas
+- Ejecuta `agent_calc_mesa.py` y, escribe, por ejemplo:
+```
+("2 + 3 * 4 - 5 ^ 2 / 5")
+```
+- Resultado esperado: `9`
